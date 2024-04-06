@@ -18,4 +18,5 @@ navigator.geolocation.getCurrentPosition(function (pos) {
   marker.setLatLng([lat, lng]).update();
 
   map.setView([lat, lng], 13);
+  marker.bindPopup(`<strong>Hello World</strong> <br> This is your location`);
 });
